@@ -269,9 +269,17 @@ border-radius: 4px;
     background: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .modal {
-    width: 600px;
-    height: 400px;
+    Width: 528px;
+    Height: 581px;
+    Top: 221px;
+    Left: 536px;
+    
     background-color: #fff;
 
     position: absolute;
