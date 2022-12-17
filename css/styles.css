@@ -123,6 +123,9 @@ a {
     line-height: 1.15;
     color: #2196F3;
     position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -137,6 +140,10 @@ a {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .link {
@@ -146,6 +153,11 @@ a {
     font-size: 14px;
     line-height: 1.15;
     color: var(--primary-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 
@@ -161,6 +173,11 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #757575;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
     }
 
 .contacts-icon {
@@ -168,6 +185,10 @@ a {
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .contacts-icon:hover {
@@ -286,7 +307,22 @@ border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
+
+.button-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
 /* < !-- Блок Списку --> */
 
 .section {
@@ -367,6 +403,33 @@ color: #757575;
 .foto-item {
     display: flex;
     gap: 30px;
+}
+
+.foto-items {
+    position: relative;
+    
+}
+
+.foto-text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+    bottom: 0px;
+    align-items: center;
+    padding: 27px 27px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+color: #FFFFFF;
 }
 /* < !-- Команда --> */
 .team {
@@ -455,6 +518,10 @@ text-align: center;
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
  
@@ -492,6 +559,10 @@ text-align: center;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .client-icon {
@@ -499,6 +570,10 @@ text-align: center;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .clients-item:hover {
@@ -539,6 +614,11 @@ text-align: center;
 
 .footer-adress{
     margin-right: 70px;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .logo-white{
     color:#FFFFFF;
@@ -563,6 +643,11 @@ text-align: center;
     line-height: 1.71;
     text-decoration: none;
     letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .footer-adress:hover,.footer-adress:focus,
 .footer-contact:hover,.footer-contact:focus{
@@ -603,6 +688,11 @@ text-align: center;
     background: rgba(255, 255, 255, 0.1);
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .footer-button:hover,
@@ -641,6 +731,11 @@ text-align: center;
 letter-spacing: 0.03em;
 border-width: 0;
 color: #212121;
+
+transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 } 
 
 .section-nav-button:hover {
@@ -664,6 +759,11 @@ color: #212121;
 .example-items {
     flex-basis: calc((100% - 60px)/ 3) ;
     outline: 1px solid #EEEEEE;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
     
   }
 
@@ -672,8 +772,27 @@ color: #212121;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 .example-names {
+    
     padding: 20px 24px;
     
+}
+
+.example-names-overlay {
+    position: absolute;
+    color: #F5F4FA;
+    background-color: rgba(33, 150, 243, 0.9);;
+    left: 0;
+    top: 0;
+
+    padding: 63px 24px;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
 }
 
 .section-example-tittle {
