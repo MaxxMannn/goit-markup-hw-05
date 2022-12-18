@@ -764,12 +764,12 @@ transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    
+    overflow: hidden;
   }
 
   .example-items:hover {
    
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 .example-names {
     
@@ -783,6 +783,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     background-color: rgba(33, 150, 243, 0.9);;
     left: 0;
     top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     padding: 63px 24px;
     align-items: center;
@@ -793,6 +798,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
+}
+
+.example-items:hover .example-names-overlay{
+    transform: translateY(0);
+    
 }
 
 .section-example-tittle {
